@@ -1,1 +1,1 @@
-# Micromouse-Team-Yikes-
+# MicromouseTeamYikes
