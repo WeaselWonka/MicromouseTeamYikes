@@ -25,7 +25,8 @@ void FollowPath::runList()
     command currMove;
     while (!pathlist.empty())
     {
-        currMove = pathlist.pop_front();
+        currMove = pathlist.front();
+        pathlist.pop_front();
         switch(currMove.movement)
         {
             case 'l':

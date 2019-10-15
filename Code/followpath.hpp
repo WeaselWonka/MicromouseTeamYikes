@@ -19,7 +19,7 @@ class FollowPath
         void runList();
 
     private:
-        std::deque<char> pathlist;
+        std::deque<command> pathlist;
         Mouse mouse;
 
 };

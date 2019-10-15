@@ -29,17 +29,17 @@ void shiftDirection(short& x, short& y, short direction)
 	}
 }
 
-virtual void Mouse::moveForward(int blocks)
+void Mouse::moveForward(int blocks)
 {
 	shiftDirection(xPos,yPos,direction);
 }
 
-virtual void Mouse::turnClockwise(int amount)
+void Mouse::turnClockwise(int amount)
 {
 	direction = shiftClockwise(direction);
 }
 
-virtual void Mouse::turnCounterClockwise(int amount)
+void Mouse::turnCounterClockwise(int amount)
 {
 	direction = shiftCounterClockwise(direction);
 }

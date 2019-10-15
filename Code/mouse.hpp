@@ -46,11 +46,10 @@ public:
 	}
 
 
-
-private:
-	short xPos;
-	short yPos;
-	short direction;
+protected:
+    short xPos;
+    short yPos;
+    short direction;
 };
 
 #endif

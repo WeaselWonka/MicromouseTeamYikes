@@ -11,10 +11,13 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2d459eb4-569b-4a35-8481-84707aa279ce" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Code/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="2922d4e2-b1ee-4fa1-8d26-28e89fbba737" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Code/followpath.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Code/followpath.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Code/followpath.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/Code/followpath.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Code/mouse.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Code/mouse.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Code/mouse.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/Code/mouse.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Code/pathfinder.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Code/pathfinder.cpp" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -75,12 +78,13 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="2d459eb4-569b-4a35-8481-84707aa279ce" name="Default Changelist" comment="" />
+      <changelist id="2922d4e2-b1ee-4fa1-8d26-28e89fbba737" name="Default Changelist" comment="" />
       <created>1571025079277</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1571025079277</updated>
       <workItem from="1571025080818" duration="1094000" />
+      <workItem from="1571102583439" duration="2422000" />
     </task>
     <task id="LOCAL-00001" summary="Added all code written over the summer">
       <created>1571025328734</created>
@@ -100,7 +104,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

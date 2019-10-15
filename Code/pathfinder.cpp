@@ -2,6 +2,7 @@
 #include "pathfinder.hpp"
 #include "maze.hpp"
 #include "mouse.hpp"
+#include "direction.hpp"
 
 PathFinder::PathFinder(Mouse& mouse)
 : Mouse(0,MazeSize - 1,0), bestPath(mouse)
@@ -9,19 +10,19 @@ PathFinder::PathFinder(Mouse& mouse)
 
 }
 
-virtual void PathFinder::moveForward(int blocks = 1) override
+void PathFinder::moveForward(int blocks)
 {
 	shiftDirection(xPos,yPos,direction);
 	bestPath.pushMovement('f');
 }
 
-virtual void PathFinder::turnClockwise(int amount = 1) override
+void PathFinder::turnClockwise(int amount)
 {
 	direction = shiftClockwise(direction);
 	bestPath.pushMovement('r');
 }
 
-virtual void PathFinder::turnCounterClockwise(int amount = 1) override
+void PathFinder::turnCounterClockwise(int amount)
 {
 	direction = shiftCounterClockwise(direction);
 	bestPath.pushMovement('l');
