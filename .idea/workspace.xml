@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
-    <generated>
-      <config projectName="MicromouseTeamYikes" targetName="MicromouseTeamYikes" />
-    </generated>
+    <generated />
   </component>
   <component name="CMakeSettings">
     <configurations>
@@ -12,12 +10,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2922d4e2-b1ee-4fa1-8d26-28e89fbba737" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Code/followpath.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Code/followpath.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Code/followpath.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/Code/followpath.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Code/mouse.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Code/mouse.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Code/mouse.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/Code/mouse.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Code/pathfinder.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Code/pathfinder.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Code/CMakeLists.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Code/direction.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Code/direction.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Code/followpath.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Code/followpath.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Code/main.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Code/maze.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Code/maze.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Code/mouse.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Code/mouse.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Code/pathfinder.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Code/pathfinder.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Code/testhelper.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Code/testhelper.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Code/todo.txt" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -28,7 +35,6 @@
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
@@ -62,11 +68,6 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration name="MicromouseTeamYikes" type="CMakeRunConfiguration" factoryName="Application" WORKING_DIR="file://$PROJECT_DIR$/Code" PASS_PARENT_ENVS_2="true" PROJECT_NAME="MicromouseTeamYikes" TARGET_NAME="MicromouseTeamYikes" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="MicromouseTeamYikes" RUN_TARGET_NAME="MicromouseTeamYikes">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
     <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" WORKING_DIR="file://$PROJECT_DIR$/Code" PASS_PARENT_ENVS_2="true">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />

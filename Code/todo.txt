@@ -1,9 +1,0 @@
-Block off dead ends
-
-<DONE> Stop repeat traversals
-
-<WIP> Fast Traverse (Make Mouse Subclass and flag for transition) : need to make the loop that allows for the pathfinder to get the path
-
-Comment
-
-Optimize
