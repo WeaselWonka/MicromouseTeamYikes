@@ -55,8 +55,7 @@ void Maze::printMaze(short x, short y)
 		{
 			for(unsigned int j = 0; j < MazeSize * 2 + 1; ++j)
 			{
-				     if(j % 2 == 1)
-				     {
+ 				     {
 				     	std::cout << ((vertical[(i+1)/2][(j-1)/2]) ? "██" : "  ");
 				     }
 				     else
