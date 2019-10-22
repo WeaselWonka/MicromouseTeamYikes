@@ -3,16 +3,16 @@
 #include <deque>
 
 FollowPath::FollowPath(Mouse& mouse)
-: mouse{mouse}
+: mouse{&mouse}
 {
 
 }
 
 void FollowPath::pushMovement(char move)
 {
-    if(pathlist.front().movement == move)
+    if(!pathlist.empty() && pathlist.back().movement == move)
     {
-        ++pathlist.front().amount;
+        ++pathlist.back().amount;
     }
     else
     {
@@ -30,13 +30,13 @@ void FollowPath::runList()
         switch(currMove.movement)
         {
             case 'l':
-                mouse.turnCounterClockwise(currMove.amount);
+                mouse->turnCounterClockwise(currMove.amount);
                 break;
             case 'r':
-                mouse.turnClockwise(currMove.amount);
+                mouse->turnClockwise(currMove.amount);
                 break;
             case 'f':
-                mouse.moveForward(currMove.amount);
+                mouse->moveForward(currMove.amount);
                 break;
         }
     }

@@ -32,3 +32,11 @@ void PathFinder::runPath()
 {
 	bestPath.runList();
 }
+
+void RunPathFinder(PathFinder& pathfinder, Maze& maze)
+{
+    while (!maze.inGoal(pathfinder.getXpos(), pathfinder.getYpos()))
+    {
+        maze.moveMouse(pathfinder);
+    }
+}

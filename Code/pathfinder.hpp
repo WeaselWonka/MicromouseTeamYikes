@@ -4,6 +4,7 @@
 
 #include "mouse.hpp"
 #include "followpath.hpp"
+#include "maze.hpp"
 
 class PathFinder : public Mouse
 {
@@ -28,5 +29,7 @@ private:
 	FollowPath bestPath;
 
 };
+
+void RunPathFinder(PathFinder& pathfinder, Maze& maze);
 
 #endif

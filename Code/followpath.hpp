@@ -25,7 +25,7 @@ class FollowPath
 
     private:
         std::deque<command> pathlist;
-        Mouse mouse;
+        Mouse* mouse;
 
 };
 

@@ -4,7 +4,7 @@
 
 #include <array>
 
-void shiftDirection(short& x, short& y, short direction);
+void shiftDirection(short& x, short& y, short direction, short amount = 1);
 
 class Mouse
 {

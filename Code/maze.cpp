@@ -9,7 +9,7 @@
 #include <algorithm>
 
 Maze::Maze()
-: finalPath{true}
+: finalPath{false}
 {
 	// Maze array initialization
 
@@ -55,13 +55,14 @@ void Maze::printMaze(short x, short y)
 		{
 			for(unsigned int j = 0; j < MazeSize * 2 + 1; ++j)
 			{
- 				     {
-				     	std::cout << ((vertical[(i+1)/2][(j-1)/2]) ? "██" : "  ");
-				     }
-				     else
-				     {
-				     	std::cout << "█";
-				     }
+                 if(j % 2 == 1)
+                 {
+                    std::cout << ((vertical[(i+1)/2][(j-1)/2]) ? "██" : "  ");
+                 }
+                 else
+                 {
+                    std::cout << "█";
+                 }
 			}
 		}
 		else
@@ -100,6 +101,7 @@ void Maze::exploreMaze(Mouse& mouse)
 {
 	if(! explored[mouse.getYpos()][mouse.getXpos()])
 	{
+	    finalPath = false;
 		std::array<bool*,4> block = this->getBlockWalls(mouse.getXpos(),mouse.getYpos());
 		std::array<bool,3> walls = mouse.getWalls();
 		*block[mouse.getDirection()] = walls[1];

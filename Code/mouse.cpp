@@ -10,28 +10,28 @@ Mouse::Mouse(short x, short y, short dir)
 
 }
 
-void shiftDirection(short& x, short& y, short direction)
+void shiftDirection(short& x, short& y, short direction,short amount)
 {
 	switch(direction)
 	{
 		case 0:
-			y-=1;
+			y-=amount;
 			return;
 		case 1:
-			x+=1;
+			x+=amount;
 			return;
 		case 2:
-			y+=1;
+			y+=amount;
 			return;
 		case 3:
-			x-=1;
+			x-=amount;
 			return;
 	}
 }
 
 void Mouse::moveForward(int blocks)
 {
-	shiftDirection(xPos,yPos,direction);
+	shiftDirection(xPos,yPos,direction,blocks);
 }
 
 void Mouse::turnClockwise(int amount)
