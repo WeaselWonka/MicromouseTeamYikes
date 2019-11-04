@@ -4,23 +4,27 @@
 #include "pathfinder.hpp"
 #include <iostream>
 
+bool WaitForSignal(Maze& maze)
+{
+    // Wait till some signal/button is pressed
+    return !maze.checkPath();
+}
+
 int main()
 {
-	setupTestMaze();
+	setupTestMaze(); // not needed in final
 
 	Maze maze{};
 	Mouse mouse{0,MazeSize - 1,0};
 
 
-	while(!maze.checkPath())
+	while(WaitForSignal(maze))
 	{
 		mouse = Mouse{0,MazeSize - 1,0};
 		while(!maze.inGoal(mouse.getXpos(),mouse.getYpos()))
 		{
 			maze.exploreMaze(mouse);
 			maze.moveMouse(mouse);
-			//std::getchar();
-			//printMaze(mouse,maze);
 		}
 	}
 

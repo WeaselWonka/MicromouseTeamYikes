@@ -1,7 +1,20 @@
 <DONE> Stop repeat traversals
 
-<WIP> Fast Traverse (Make Mouse Subclass and flag for transition) : need to make the loop that allows for the pathfinder to get the path
+<DONE> Fast Traverse (Make Mouse Subclass and flag for transition) : need to make the loop that allows for the pathfinder to get the path
 
-Comment
+<Done> Comment
+
+Add the wait to WaitForSignal in main.cpp
+
+Change getWalls in mouse.cpp to use sensor to detect walls around the robot
+
+Change movement functions in mouse.cpp to move the robot around
+    - Add in pid system
+    - Allow for moving forward and turning
 
 Optimize
+
+////////////////////////////////////////////////////////////////////////
+
+Small Changes:
+    - Remove amt from turning functions as robot only needs to turn 90 degrees
