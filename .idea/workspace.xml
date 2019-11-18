@@ -12,9 +12,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2922d4e2-b1ee-4fa1-8d26-28e89fbba737" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Input/CompleteMaze2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Input/CompleteMaze3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Input/ConvertToMaze.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Code/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Code/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Code/todo.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Code/todo.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -37,10 +39,12 @@
   <component name="ProjectId" id="1SB7LWSDp7TKPfprVPq18LkAaDh" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../program2" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Input" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\nolan\CLionProjects\MicromouseTeamYikes\Input" />
+      <recent name="C:\Users\nolan\CLionProjects\MicromouseTeamYikes\Code\cmake-build-debug\CMakeFiles" />
       <recent name="C:\Users\kaleb\CLionProjects\MicromouseTeamYikes\Code\cmake-build-debug" />
       <recent name="C:\Users\kaleb\CLionProjects\MicromouseTeamYikes\Code" />
       <recent name="C:\Users\kaleb\CLionProjects\MicromouseTeamYikes" />
@@ -84,7 +88,10 @@
       <workItem from="1571102583439" duration="2422000" />
       <workItem from="1571690122945" duration="4860000" />
       <workItem from="1571860770066" duration="78000" />
-      <workItem from="1572826004516" duration="1670000" />
+      <workItem from="1572826004516" duration="2800000" />
+      <workItem from="1572908082920" duration="611000" />
+      <workItem from="1573528761684" duration="26000" />
+      <workItem from="1574039968530" duration="2104000" />
     </task>
     <task id="LOCAL-00001" summary="Added all code written over the summer">
       <created>1571025328734</created>
@@ -100,7 +107,14 @@
       <option name="project" value="LOCAL" />
       <updated>1571698123970</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Changed todo list to show changes and additions needed&#10;Added WaitTillSignal function, but did not add in the wait">
+      <created>1572827761678</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1572827761679</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -122,6 +136,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added all code written over the summer" />
     <MESSAGE value="Commented out the .hpp files with the uses of the various functions within them" />
-    <option name="LAST_COMMIT_MESSAGE" value="Commented out the .hpp files with the uses of the various functions within them" />
+    <MESSAGE value="Changed todo list to show changes and additions needed&#10;Added WaitTillSignal function, but did not add in the wait" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed todo list to show changes and additions needed&#10;Added WaitTillSignal function, but did not add in the wait" />
   </component>
 </project>
