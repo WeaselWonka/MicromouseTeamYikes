@@ -7,6 +7,8 @@
 #include <array>
 #include <vector>
 #include <algorithm>
+#include <sstream>
+#include <string>
 
 Maze::Maze()
 : finalPath{false}
@@ -49,6 +51,7 @@ Maze::Maze()
 
 void Maze::printMaze(short x, short y)
 {
+    std::stringstream ss;
 	for(unsigned int i = 0; i < MazeSize * 2 + 1; ++i)
 	{
 		if(i % 2  == 0)
@@ -57,11 +60,11 @@ void Maze::printMaze(short x, short y)
 			{
                  if(j % 2 == 1)
                  {
-                    std::cout << ((vertical[(i+1)/2][(j-1)/2]) ? "██" : "  ");
+                    ss << ((vertical[(i+1)/2][(j-1)/2]) ? "██" : "  ");
                  }
                  else
                  {
-                    std::cout << "█";
+                    ss << "█";
                  }
 			}
 		}
@@ -71,23 +74,24 @@ void Maze::printMaze(short x, short y)
 			{
 				if(j % 2 == 0)
 				{
-					std::cout << ((horizontal[(i-1)/2][(j+1)/2]) ? "█" : " ");
+					ss << ((horizontal[(i-1)/2][(j+1)/2]) ? "█" : " ");
 				}
 				else
 				{
 					if(board[i/2][j/2] < 10)
 					{
-						std::cout << ((x == j/2 && y == i/2)? "\033[1;31m" : ((board[i/2][j/2] == 0) ? "\033[1;32m" : "\033[1;36m")) << "0" << board[i/2][j/2] << "\033[0m";
+						ss << ((x == j/2 && y == i/2)? "\033[1;31m" : ((board[i/2][j/2] == 0) ? "\033[1;32m" : "\033[1;36m")) << "0" << board[i/2][j/2] << "\033[0m";
 					}
 					else
 					{
-						std::cout << ((x == j/2 && y == i/2)? "\033[1;31m" : ((board[i/2][j/2] == 0) ? "\033[1;32m" : "\033[1;36m")) << board[i/2][j/2] << "\033[0m";
+						ss << ((x == j/2 && y == i/2)? "\033[1;31m" : ((board[i/2][j/2] == 0) ? "\033[1;32m" : "\033[1;36m")) << board[i/2][j/2] << "\033[0m";
 					}
 				}
 			}
 		}
-		std::cout << std::endl;
+		ss << std::endl;
 	}
+	std::cout << ss.str();
 }
 
 std::array<bool*,4> Maze::getBlockWalls(short x, short y)

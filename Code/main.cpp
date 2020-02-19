@@ -25,6 +25,8 @@ int main()
 		{
 			maze.exploreMaze(mouse);
 			maze.moveMouse(mouse);
+            std::cin.get();
+			printMaze(mouse,maze); // Debug output
 		}
 	}
 
