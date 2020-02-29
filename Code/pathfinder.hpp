@@ -14,7 +14,7 @@ public:
 	PathFinder(Mouse& mouse);
 
     // Pushes a forward movement onto the FollowPath
-	virtual void moveForward(int blocks = 1) override;
+	virtual void runForward(int blocks = 1) override;
 
 	// Pushes a clockwise turn onto the FollowPath
 	virtual void turnClockwise(int amount = 1) override;

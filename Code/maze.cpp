@@ -41,6 +41,8 @@ Maze::Maze()
 	vertical[0].fill(true);
 	vertical[MazeSize].fill(true);
 
+	horizontal[MazeSize-1][1] = true;
+
 	// Optimizations
 
 	for(std::array<bool,MazeSize>& arr: explored)
@@ -105,6 +107,7 @@ void Maze::exploreMaze(Mouse& mouse)
 {
 	if(! explored[mouse.getYpos()][mouse.getXpos()])
 	{
+	    mouse.waitForSDelta();
 	    finalPath = false;
 		std::array<bool*,4> block = this->getBlockWalls(mouse.getXpos(),mouse.getYpos());
 		std::array<bool,3> walls = mouse.getWalls();
@@ -116,6 +119,8 @@ void Maze::exploreMaze(Mouse& mouse)
 
 		this->fixMaze(mouse.getXpos(),mouse.getYpos());
 	}
+
+	mouse.stopAtNextBlock();
 }
 
 
@@ -162,17 +167,17 @@ void Maze::moveMouse(Mouse& mouse)
 
 	if(minPoint.direction == mouse.getDirection())
 	{
-		mouse.moveForward();
+		mouse.runForward();
 	}
 	else if(minPoint.direction == shiftClockwise(mouse.getDirection()))
 	{
 		mouse.turnClockwise();
-		mouse.moveForward();
+		mouse.runForward();
 	}
 	else if(minPoint.direction == shiftCounterClockwise(mouse.getDirection()))
 	{
 		mouse.turnCounterClockwise();
-		mouse.moveForward();
+		mouse.runForward();
 	}
 	else
 	{

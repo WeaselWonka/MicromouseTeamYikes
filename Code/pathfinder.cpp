@@ -10,7 +10,7 @@ PathFinder::PathFinder(Mouse& mouse)
 
 }
 
-void PathFinder::moveForward(int blocks)
+void PathFinder::runForward(int blocks)
 {
 	shiftDirection(xPos,yPos,direction);
 	bestPath.pushMovement('f');

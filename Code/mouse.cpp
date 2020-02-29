@@ -29,7 +29,7 @@ void shiftDirection(short& x, short& y, short direction,short amount)
 	}
 }
 
-void Mouse::moveForward(int blocks)
+void Mouse::runForward(int blocks)
 {
 	shiftDirection(xPos,yPos,direction,blocks);
 }

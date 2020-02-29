@@ -6,6 +6,9 @@
 
 void shiftDirection(short& x, short& y, short direction, short amount = 1);
 
+#define encoderToBlock 1000
+#define encoderToSDelta (encoderToBlock * .6)
+
 class Mouse
 {
 public:
@@ -13,8 +16,25 @@ public:
     // Creates a new mouse at point (<x>,<y>) with the direction <dir>
 	Mouse(short x, short y, short dir);
 
+    // Stops mouse when it moves a block
+    void stopAtNextBlock()
+    {
+
+    }
+
+    // Waits until SDelta
+    void waitForSDelta()
+    {
+
+    }
+
+    void moveForward(int blocks = 1)
+    {
+        shiftDirection(xPos,yPos,direction,blocks);
+    }
+
     // Moves the mouse forward <blocks> blocks
-	virtual void moveForward(int blocks = 1);
+	virtual void runForward(int blocks = 1);
 
 	// Turns the mouse clockwise (<amount> * 90) degrees
 	virtual void turnClockwise(int amount = 1);
