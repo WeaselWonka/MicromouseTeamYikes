@@ -12,12 +12,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2922d4e2-b1ee-4fa1-8d26-28e89fbba737" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Code/maze.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Code/maze.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Code/mouse.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Code/mouse.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Code/mouse.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/Code/mouse.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Code/pathfinder.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Code/pathfinder.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Code/pathfinder.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/Code/pathfinder.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Code/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Code/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Code/followpath.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Code/followpath.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Code/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Code/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Code/pathfinder.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Code/pathfinder.hpp" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -41,7 +41,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="ObjectiveC" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Code" />
     <property name="settings.editor.selected.configurable" value="reference.idesettings.emmet" />
   </component>
   <component name="RecentsManager">
@@ -111,6 +111,7 @@
       <workItem from="1581979522015" duration="1497000" />
       <workItem from="1582151850921" duration="5888000" />
       <workItem from="1582494895484" duration="384000" />
+      <workItem from="1583014499201" duration="558000" />
     </task>
     <task id="LOCAL-00001" summary="Added all code written over the summer">
       <created>1571025328734</created>
@@ -147,7 +148,14 @@
       <option name="project" value="LOCAL" />
       <updated>1582151897663</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="working test build">
+      <created>1583014607954</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1583014607954</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -171,6 +179,7 @@
     <MESSAGE value="Commented out the .hpp files with the uses of the various functions within them" />
     <MESSAGE value="Changed todo list to show changes and additions needed&#10;Added WaitTillSignal function, but did not add in the wait" />
     <MESSAGE value="added in a python file to create new mazes" />
-    <option name="LAST_COMMIT_MESSAGE" value="added in a python file to create new mazes" />
+    <MESSAGE value="working test build" />
+    <option name="LAST_COMMIT_MESSAGE" value="working test build" />
   </component>
 </project>

@@ -1,7 +1,6 @@
 #include "maze.hpp"
 #include "mouse.hpp"
 #include "testhelper.hpp"
-#include "pathfinder.hpp"
 #include <iostream>
 
 bool WaitForSignal(Maze& maze)
@@ -29,17 +28,6 @@ int main()
 			printMaze(mouse,maze); // Debug output
 		}
 	}
-
-	printMaze(mouse,maze); // Debug output
-    mouse = Mouse{0,MazeSize - 1,0};
-	PathFinder pathFinder{mouse};
-
-	RunPathFinder(pathFinder,maze);
-
-	pathFinder.runPath();
-
-    std::cout << mouse.getXpos() << " " << mouse.getYpos(); // Debug output
-
 
 
     return 0;

@@ -9,11 +9,9 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
 
 set(SOURCE_FILES
     direction.cpp
-    followpath.cpp
         main.cpp
         maze.cpp
         mouse.cpp
-        pathfinder.cpp
         testhelper.cpp)
 
 
