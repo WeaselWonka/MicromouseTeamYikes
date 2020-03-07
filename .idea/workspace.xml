@@ -13,14 +13,8 @@
   <component name="ChangeListManager">
     <list default="true" id="2922d4e2-b1ee-4fa1-8d26-28e89fbba737" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Code/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Code/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Code/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Code/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Code/maze.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Code/maze.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Code/mouse.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Code/mouse.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Code/mouse.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/Code/mouse.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Code/testhelper.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Code/testhelper.hpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Code/todo.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Code/todo.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -130,7 +124,7 @@
       <workItem from="1582494895484" duration="384000" />
       <workItem from="1583014499201" duration="897000" />
       <workItem from="1583017505337" duration="1657000" />
-      <workItem from="1583619019159" duration="3708000" />
+      <workItem from="1583619019159" duration="5709000" />
     </task>
     <task id="LOCAL-00001" summary="Added all code written over the summer">
       <created>1571025328734</created>
@@ -188,7 +182,14 @@
       <option name="project" value="LOCAL" />
       <updated>1583619145884</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="pulled out iostream and tester. Added in motors to mouse">
+      <created>1583622800935</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1583622800935</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -215,6 +216,7 @@
     <MESSAGE value="working test build" />
     <MESSAGE value="removed the pathfinder to simplify code" />
     <MESSAGE value="just checking it is committed before I wrench out io stream and the testHelper bits" />
-    <option name="LAST_COMMIT_MESSAGE" value="just checking it is committed before I wrench out io stream and the testHelper bits" />
+    <MESSAGE value="pulled out iostream and tester. Added in motors to mouse" />
+    <option name="LAST_COMMIT_MESSAGE" value="pulled out iostream and tester. Added in motors to mouse" />
   </component>
 </project>

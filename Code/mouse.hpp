@@ -9,10 +9,22 @@ void shiftDirection(short& x, short& y, short direction, short amount = 1);
 #define encoderToBlock 1000
 #define encoderToSDelta (encoderToBlock * .6)
 
+#define forwardSpeed 100
+#define turnSpeed 70
+
+#define degToEnc 1 // < idk
+
 typedef struct{
     int motorEN, motorForward, motorReverse;
     int encoderPinA, encoderPinB, encoderValue;
+    void runMotor(int enVal, int forVal, int revVal);
 } Motor;
+
+typedef struct{
+    int emitter, receiver;
+    int lowerWallRange, upperWallRange;
+    bool foundWall();
+} IRSensor;
 
 class Mouse
 {
@@ -84,6 +96,10 @@ protected:
     short direction;
     Motor leftMotor;
     Motor rightMotor;
+    IRSensor lbSensor;
+    IRSensor lfSensor;
+    IRSensor rfSensor;
+    IRSensor rbSensor;
 };
 
 #endif
