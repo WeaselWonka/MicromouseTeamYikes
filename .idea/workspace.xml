@@ -12,12 +12,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2922d4e2-b1ee-4fa1-8d26-28e89fbba737" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Code/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Code/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Code/followpath.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Code/followpath.hpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Code/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Code/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Code/pathfinder.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Code/pathfinder.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -27,6 +22,20 @@
   </component>
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="Git.Settings">
@@ -46,11 +55,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\nolan\CLionProjects\MicromouseTeamYikes\Code" />
       <recent name="C:\Users\nolan\CLionProjects\MicromouseTeamYikes\Code\cmake-build-debug" />
       <recent name="C:\Users\nolan\CLionProjects\MicromouseTeamYikes\Input" />
       <recent name="C:\Users\nolan\CLionProjects\MicromouseTeamYikes\Code\cmake-build-debug\CMakeFiles" />
       <recent name="C:\Users\kaleb\CLionProjects\MicromouseTeamYikes\Code\cmake-build-debug" />
-      <recent name="C:\Users\kaleb\CLionProjects\MicromouseTeamYikes\Code" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -111,7 +120,8 @@
       <workItem from="1581979522015" duration="1497000" />
       <workItem from="1582151850921" duration="5888000" />
       <workItem from="1582494895484" duration="384000" />
-      <workItem from="1583014499201" duration="558000" />
+      <workItem from="1583014499201" duration="897000" />
+      <workItem from="1583017505337" duration="1657000" />
     </task>
     <task id="LOCAL-00001" summary="Added all code written over the summer">
       <created>1571025328734</created>
@@ -155,7 +165,14 @@
       <option name="project" value="LOCAL" />
       <updated>1583014607954</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="removed the pathfinder to simplify code">
+      <created>1583015083492</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1583015083492</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -180,6 +197,7 @@
     <MESSAGE value="Changed todo list to show changes and additions needed&#10;Added WaitTillSignal function, but did not add in the wait" />
     <MESSAGE value="added in a python file to create new mazes" />
     <MESSAGE value="working test build" />
-    <option name="LAST_COMMIT_MESSAGE" value="working test build" />
+    <MESSAGE value="removed the pathfinder to simplify code" />
+    <option name="LAST_COMMIT_MESSAGE" value="removed the pathfinder to simplify code" />
   </component>
 </project>

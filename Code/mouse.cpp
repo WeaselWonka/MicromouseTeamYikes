@@ -2,7 +2,6 @@
 #include "mouse.hpp"
 #include "direction.hpp"
 #include "testhelper.hpp"
-#include <iostream>
 
 Mouse::Mouse(short x, short y, short dir)
 : xPos{x},yPos{y},direction{dir}
