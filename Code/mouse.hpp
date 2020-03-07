@@ -9,6 +9,11 @@ void shiftDirection(short& x, short& y, short direction, short amount = 1);
 #define encoderToBlock 1000
 #define encoderToSDelta (encoderToBlock * .6)
 
+typedef struct{
+    int motorEN, motorForward, motorReverse;
+    int encoderPinA, encoderPinB, encoderValue;
+} Motor;
+
 class Mouse
 {
 public:
@@ -16,17 +21,14 @@ public:
     // Creates a new mouse at point (<x>,<y>) with the direction <dir>
 	Mouse(short x, short y, short dir);
 
-    // Stops mouse when it moves a block
-    void stopAtNextBlock()
-    {
+    // Moves the mouse to the middle of the block from the starting position
+    void initialize();
 
-    }
+    // Stops mouse when it moves a block
+    void stopAtNextBlock();
 
     // Waits until SDelta
-    void waitForSDelta()
-    {
-
-    }
+    void waitForSDelta();
 
     void moveForward(int blocks = 1)
     {
@@ -34,7 +36,7 @@ public:
     }
 
     // Moves the mouse forward <blocks> blocks
-	virtual void runForward(int blocks = 1);
+	virtual void runForward();
 
 	// Turns the mouse clockwise (<amount> * 90) degrees
 	virtual void turnClockwise(int amount = 1);
@@ -76,11 +78,12 @@ public:
 		this->direction = direction;
 	}
 
-
 protected:
     short xPos;
     short yPos;
     short direction;
+    Motor leftMotor;
+    Motor rightMotor;
 };
 
 #endif

@@ -1,14 +1,11 @@
 
 #include "maze.hpp"
-#include <iostream>
 #include "mouse.hpp"
 #include "direction.hpp"
 #include <stack>
 #include <array>
 #include <vector>
 #include <algorithm>
-#include <sstream>
-#include <string>
 
 Maze::Maze()
 : finalPath{false}
@@ -49,51 +46,6 @@ Maze::Maze()
 	{
 		arr.fill(false);
 	}
-}
-
-void Maze::printMaze(short x, short y)
-{
-    std::stringstream ss;
-	for(unsigned int i = 0; i < MazeSize * 2 + 1; ++i)
-	{
-		if(i % 2  == 0)
-		{
-			for(unsigned int j = 0; j < MazeSize * 2 + 1; ++j)
-			{
-                 if(j % 2 == 1)
-                 {
-                    ss << ((vertical[(i+1)/2][(j-1)/2]) ? "██" : "  ");
-                 }
-                 else
-                 {
-                    ss << "█";
-                 }
-			}
-		}
-		else
-		{
-			for(unsigned int j = 0; j < MazeSize * 2 + 1; ++j)
-			{
-				if(j % 2 == 0)
-				{
-					ss << ((horizontal[(i-1)/2][(j+1)/2]) ? "█" : " ");
-				}
-				else
-				{
-					if(board[i/2][j/2] < 10)
-					{
-						ss << ((x == j/2 && y == i/2)? "\033[1;31m" : ((board[i/2][j/2] == 0) ? "\033[1;32m" : "\033[1;36m")) << "0" << board[i/2][j/2] << "\033[0m";
-					}
-					else
-					{
-						ss << ((x == j/2 && y == i/2)? "\033[1;31m" : ((board[i/2][j/2] == 0) ? "\033[1;32m" : "\033[1;36m")) << board[i/2][j/2] << "\033[0m";
-					}
-				}
-			}
-		}
-		ss << std::endl;
-	}
-	std::cout << ss.str();
 }
 
 std::array<bool*,4> Maze::getBlockWalls(short x, short y)

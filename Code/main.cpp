@@ -1,7 +1,5 @@
 #include "maze.hpp"
 #include "mouse.hpp"
-#include "testhelper.hpp"
-#include <iostream>
 
 bool WaitForSignal(Maze& maze)
 {
@@ -11,7 +9,6 @@ bool WaitForSignal(Maze& maze)
 
 int main()
 {
-	setupTestMaze(); // not needed in final
 
 	Maze maze{};
 	Mouse mouse{0,MazeSize - 1,0};
@@ -24,8 +21,6 @@ int main()
 		{
 			maze.exploreMaze(mouse);
 			maze.moveMouse(mouse);
-            std::cin.get();
-			printMaze(mouse,maze); // Debug output
 		}
 	}
 

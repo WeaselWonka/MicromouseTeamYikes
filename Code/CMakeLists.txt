@@ -12,7 +12,7 @@ set(SOURCE_FILES
         main.cpp
         maze.cpp
         mouse.cpp
-        testhelper.cpp)
+        )
 
 
 add_executable(MicromouseTeamYikes ${SOURCE_FILES})
