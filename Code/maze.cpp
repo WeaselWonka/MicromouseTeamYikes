@@ -123,18 +123,17 @@ void Maze::moveMouse(Mouse& mouse)
 	}
 	else if(minPoint.direction == shiftClockwise(mouse.getDirection()))
 	{
-		mouse.turnClockwise();
+		mouse.turnClockwise(1);
 		mouse.runForward();
 	}
 	else if(minPoint.direction == shiftCounterClockwise(mouse.getDirection()))
 	{
-		mouse.turnCounterClockwise();
+		mouse.turnCounterClockwise(1);
 		mouse.runForward();
 	}
 	else
 	{
-		mouse.turnClockwise();
-		mouse.turnClockwise();
+		mouse.turnClockwise(2);
 		mouse.moveForward();
 	}
 }

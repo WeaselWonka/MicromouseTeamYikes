@@ -85,7 +85,8 @@ void Mouse::runForward()
 
 void Mouse::turnClockwise(int amount)
 {
-	direction = shiftClockwise(direction);
+    for(int i = 0; i < amount; ++i)
+	    direction = shiftClockwise(direction);
     rightMotor.runMotor(forwardSpeed, 0, 1);
     leftMotor.runMotor(forwardSpeed, 1, 0);
     while(leftMotor.motorEN < degToEnc * amount)
@@ -98,7 +99,8 @@ void Mouse::turnClockwise(int amount)
 
 void Mouse::turnCounterClockwise(int amount)
 {
-	direction = shiftCounterClockwise(direction);
+	for(int i = 0; i < amount; ++i)
+        direction = shiftCounterClockwise(direction);
     rightMotor.runMotor(forwardSpeed, 1, 0);
     leftMotor.runMotor(forwardSpeed, 0, 1);
     while(leftMotor.motorEN < degToEnc * amount)
@@ -124,7 +126,7 @@ std::array<bool,3> Mouse::getWalls()
     digitalWrite(lbSensor.emitter,1);
     digitalWrite(rbSensor.emitter,1);
     delay(10)
-    frontWall = lbSensor.foundWall() && rbSensor.foundWall();
+    frontWall = lbSensor.foundWall() || rbSensor.foundWall(); // need to fix
     digitalWrite(lbSensor.emitter,0);
     digitalWrite(rbSensor.emitter,0);
 

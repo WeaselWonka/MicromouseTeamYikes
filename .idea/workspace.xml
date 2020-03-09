@@ -13,8 +13,9 @@
   <component name="ChangeListManager">
     <list default="true" id="2922d4e2-b1ee-4fa1-8d26-28e89fbba737" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Code/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Code/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Code/maze.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Code/maze.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Code/mouse.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Code/mouse.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Code/mouse.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/Code/mouse.hpp" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -124,7 +125,8 @@
       <workItem from="1582494895484" duration="384000" />
       <workItem from="1583014499201" duration="897000" />
       <workItem from="1583017505337" duration="1657000" />
-      <workItem from="1583619019159" duration="5709000" />
+      <workItem from="1583619019159" duration="5756000" />
+      <workItem from="1583712002597" duration="1343000" />
     </task>
     <task id="LOCAL-00001" summary="Added all code written over the summer">
       <created>1571025328734</created>
@@ -189,7 +191,14 @@
       <option name="project" value="LOCAL" />
       <updated>1583622800935</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="wrote some basic code for moving the mouse">
+      <created>1583624784656</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1583624784656</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -217,6 +226,7 @@
     <MESSAGE value="removed the pathfinder to simplify code" />
     <MESSAGE value="just checking it is committed before I wrench out io stream and the testHelper bits" />
     <MESSAGE value="pulled out iostream and tester. Added in motors to mouse" />
-    <option name="LAST_COMMIT_MESSAGE" value="pulled out iostream and tester. Added in motors to mouse" />
+    <MESSAGE value="wrote some basic code for moving the mouse" />
+    <option name="LAST_COMMIT_MESSAGE" value="wrote some basic code for moving the mouse" />
   </component>
 </project>

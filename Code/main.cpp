@@ -13,9 +13,9 @@ int main()
 	Maze maze{};
 	Mouse mouse{0,MazeSize - 1,0};
 
-
 	while(WaitForSignal(maze))
 	{
+	    mouse.initialize();
 		mouse = Mouse{0,MazeSize - 1,0};
 		while(!maze.inGoal(mouse.getXpos(),mouse.getYpos()))
 		{
