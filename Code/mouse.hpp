@@ -3,6 +3,7 @@
 #define MOUSE
 
 #include <array>
+#include "PID.hpp"
 
 void shiftDirection(short& x, short& y, short direction, short amount = 1);
 
@@ -100,6 +101,8 @@ protected:
     IRSensor lfSensor;
     IRSensor rfSensor;
     IRSensor rbSensor;
+	PID leftPID = PID();
+	PID rightPID = PID();
 };
 
 #endif

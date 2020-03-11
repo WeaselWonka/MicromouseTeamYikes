@@ -2,6 +2,7 @@
 #include <Arduino.h>
 #include "mouse.hpp"
 #include "direction.hpp"
+#include "PID.hpp"
 
 void Motor::runMotor(int enVal, int forVal, int revVal)
 {
@@ -137,8 +138,20 @@ std::array<bool,3> Mouse::getWalls()
 
 void Mouse::stopAtNextBlock()
 {
+    int leftChange, rightChange;
+
     while(leftMotor.encoderValue < encoderToBlock)
     {
+        leftChange = leftPID.compute(leftMotor.encoderValue/360.0);
+        rightChange = rightPID.compute(rightMotor.encoderValue/360.0);
+        
+        if (leftChange != 0 || rightChange != 0)
+        {
+            motorMovement(leftMotor.motorEN + leftChange, 1, 0);
+            motorMovement(rightMotor.motorEN + rightChange, 1, 0);
+            leftMotor.motorEN += leftChange;
+            rightMotor.motorEN += rightChange;
+        }
     }
     leftMotor.encoderValue -= encoderToBlock;
     rightMotor.encoderValue -= encoderToBlock;
@@ -147,7 +160,19 @@ void Mouse::stopAtNextBlock()
 
 void Mouse::waitForSDelta()
 {
+    int leftChange, rightChange;
+    
     while(leftMotor.encoderValue < encoderToSDelta)
     {
+        leftChange = leftPID.compute(leftMotor.encoderValue/360.0);
+        rightChange = rightPID.compute(rightMotor.encoderValue/360.0);
+        
+        if (leftChange != 0 || rightChange != 0)
+        {
+            motorMovement(leftMotor.motorEN + leftChange, 1, 0);
+            motorMovement(rightMotor.motorEN + rightChange, 1, 0);
+            leftMotor.motorEN += leftChange;
+            rightMotor.motorEN += rightChange;
+        }
     }
 }
