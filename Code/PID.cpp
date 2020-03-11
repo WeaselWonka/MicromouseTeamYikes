@@ -6,6 +6,14 @@
 int sampleTime = 500; //0.5 sec
 int pwm_multi = 4;
 
+PID::PID()
+{
+   target_speed = 150;
+   sampleTime = 125; //millis I think?
+   kp = 3;
+   ki = .6;
+   kd = .2;
+}
 PID::PID(double targetSpeed, int sampleTime, double Kp, double Ki, double Kd)
 : target_speed(targetSpeed), sampleTime(sampleTime), kp(Kp), ki(Ki), kd(Kd)
 {
