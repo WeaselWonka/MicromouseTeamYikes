@@ -147,8 +147,8 @@ void Mouse::stopAtNextBlock()
         
         if (leftChange != 0 || rightChange != 0)
         {
-            motorMovement(leftMotor.motorEN + leftChange, 1, 0);
-            motorMovement(rightMotor.motorEN + rightChange, 1, 0);
+            leftMotor.runMotor(leftMotor.motorEN + leftChange, 1, 0);
+            rightMotor.runMotor(rightMotor.motorEN + rightChange, 1, 0);
             leftMotor.motorEN += leftChange;
             rightMotor.motorEN += rightChange;
         }
@@ -161,7 +161,7 @@ void Mouse::stopAtNextBlock()
 void Mouse::waitForSDelta()
 {
     int leftChange, rightChange;
-    
+
     while(leftMotor.encoderValue < encoderToSDelta)
     {
         leftChange = leftPID.compute(leftMotor.encoderValue/360.0);
